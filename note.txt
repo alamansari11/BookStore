@@ -1,0 +1,32 @@
+BACKEND:-
+
+npm init -y // for project initialization
+
+add ` "type": "module", `inthe package.json file so that we can use import and export modules of javascript
+
+npm i express
+npm i nodemon  // for restarting server 
+
+scripts in package.json file for running our project
+"scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+to run the project use
+`npm run dev or npm run start`
+
+-------------------------------------------------------
+
+if you are using express initialize a '/' endpoint for default 
+app.get('/',(request,response)=>{
+
+});
+
+
+
+---------------------------------------------
+Vite uses the esbuild bundler, which is much faster than the Webpack used in create-react-app. It owes its speed to the fact that it is written in Go
+
+"npm create vite@latest"
+
+--------------------------------------------
